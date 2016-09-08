@@ -1,0 +1,133 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900';
+@font-face {
+  font-family: "Komika Axis";
+  src: url(../fonts/KOMIKAX_.ttf);
+}
+.star-rating {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+.star-rating .star {
+  padding: 1px;
+  color: #ddd;
+  font-size: 12px;
+  list-style-type: none;
+  display: inline-block;
+  cursor: pointer;
+}
+.star-rating .star.filled {
+  color: #fd0;
+}
+.star-rating.readonly .star.filled {
+  color: #fd0;
+}
+.ng-scope {
+  display: inline;
+}
+.largeContainer {
+  width: 100%;
+  max-width: 971px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+.largeContainer .titleBar {
+  width: 100%;
+  position: relative;
+  background-color: #ff9207;
+  height: 50px;
+}
+.largeContainer .titleBar h2 {
+  font-family: 'Komika Axis';
+  font-size: 26px;
+  padding: 8px 0 8px 15px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.largeContainer .productsContainer {
+  margin-top: 15px;
+  width: 100%;
+  position: relative;
+  height: auto;
+  display: block;
+}
+.largeContainer .productsContainer .product {
+  width: calc(25% - 9.5px);
+  position: relative;
+  float: left;
+  background-color: #fff;
+  height: 230px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+.largeContainer .productsContainer .product .productImage {
+  width: 100%;
+  position: relative;
+}
+.largeContainer .productsContainer .product .productImage img {
+  max-width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+.largeContainer .productsContainer .product .productDetails {
+  width: 100%;
+  padding: 5px 12px 0;
+}
+.largeContainer .productsContainer .product .productDetails a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  color: #383c3f;
+  font-size: 14px;
+}
+.largeContainer .productsContainer .product .productDetails a span.caption {
+  font-family: 'Roboto', sans-serif;
+  color: #383c3f;
+  font-size: 14px;
+  display: block;
+}
+.largeContainer .productsContainer .product .productDetails span.price {
+  display: inline-block;
+  font-size: 12px;
+  color: gray;
+  font-weight: bold;
+}
+.largeContainer .productsContainer .product .productDetails span.rating {
+  display: inline-block;
+  float: right;
+}
+.largeContainer .productsContainer .product .showMore {
+  border: dashed 2px #d4cece;
+  height: 90%;
+  margin: 5%;
+}
+.largeContainer .productsContainer .product .showMore h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 130px;
+  text-align: center;
+  color: #1aa1dc;
+  margin: 4px auto -10px;
+}
+.largeContainer .productsContainer .product .showMore p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #1aa1dc;
+  text-transform: uppercase;
+}
+.largeContainer .productsContainer .product:nth-child(4n+4) {
+  margin-right: 0;
+}
+.largeContainer .productsContainer .product:last-child:hover {
+  background-color: #1aa1dc;
+  cursor: pointer;
+}
+.largeContainer .productsContainer .product:last-child:hover .showMore {
+  border: dashed 2px #fff;
+}
+.largeContainer .productsContainer .product:last-child:hover .showMore h3,
+.largeContainer .productsContainer .product:last-child:hover .showMore p {
+  color: #fff;
+}

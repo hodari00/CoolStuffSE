@@ -1,0 +1,81 @@
+@media only screen and (max-width: 1240px){
+
+	.largeContainer {
+		max-width: 720px;
+
+		.productsContainer {
+			.product {
+				width: ~"calc(33% - 6px)";
+			}
+			.product:nth-child(4n+4) {
+				margin-right: 12px;
+			}
+			.product:nth-child(3n+3) {
+				margin-right: 0;
+			}
+		}
+	}
+	
+}
+
+@media only screen and (max-width: 950px){
+
+	.largeContainer {
+		width: 95vw;
+
+		.productsContainer {
+			.product {
+				width: ~"calc(50% - 6px)";
+				height: auto;
+
+				.productDetails {
+					margin-bottom: 10px;
+				}
+			}
+			.product:nth-child(4n+4) {
+				margin-right: 12px;
+			}
+			.product:nth-child(3n+3) {
+				margin-right: 12px;
+			}
+			.product:nth-child(even) {
+				margin-right: 0;
+			}
+			.product:last-child {
+				height: 319px;
+			}
+		}
+	}
+	
+}
+
+@media only screen and (max-width: 500px){
+
+	.largeContainer {
+		width: 95vw;
+
+		.productsContainer {
+			.product {
+				width: ~"calc(100% - 6px)";
+				height: auto;
+
+				.productDetails {
+					margin-bottom: 10px;
+				}
+			}
+			.product:nth-child(4n+4) {
+				margin-right: 12px;
+			}
+			.product:nth-child(3n+3) {
+				margin-right: 12px;
+			}
+			.product:nth-child(even) {
+				margin-right: 12px;
+			}
+			.product:last-child {
+				height: 70vw;
+			}
+		}
+	}
+	
+}
